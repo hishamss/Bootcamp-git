@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Homework1</title>
+        <style>
+            .item1 { grid-area: header; margin: 0 50px; }
+            .item2 { grid-area: nav; margin: 0 50px; }
+            .item3 { 
+                grid-area: section;
+                height: 300px;
+                margin-left: 50px;
+            }
+            .item4 { 
+                grid-area: aside;
+                height: 300px;
+                margin-right: 50px;    
+            }
+            .item5 { grid-area: footer; margin: 0 50px; }
+
+            .grid-container {
+                display: grid;
+                grid-template-areas:
+                    'header header header header header header'
+                    'nav nav nav nav nav nav'
+                    'section section section aside aside aside'
+                    'footer footer footer footer footer footer';
+                grid-gap: 15px;
+                background-color: rgb(83, 83, 83);
+                padding: 10px;
+    }
+
+            .grid-container > div {
+                background-color: rgba(236, 232, 232, 0.8);
+                text-align: center;
+                padding: 20px 0;
+                font-size: 30px;
+                color:rgb(83, 83, 83);
+            }
+            .article {
+                background-color: rgb(83, 83, 83);
+                height: 213px;
+                margin-left: 10px;
+                margin-right: 10px;
+                margin-top: 60px;
+                color:rgba(236, 232, 232, 0.8)
+            }
+            .inside {
+                text-align: center; 
+                margin-top: 60px;
+                margin-left: 10px;
+                margin-right: 10px;
+                height: 70px;
+                color:rgb(83, 83, 83);        
+            }
+        </style>
+    </head>
+    <body class="grid-container">
+        <div class="item1">header</div>
+        <div class="item2">nav</div>
+        <div class="item3">section
+            <div class="article">article
+                <div class="inside">
+                    <div style="background-color: rgba(236, 232, 232, 0.8); height: 50px;"><strong>h1, h2, h3</strong></div>
+                    <!-- Ask why div didnt' break the line so I had to put empty div to break the line-->
+                    <div style="background-color: rgb(83, 83, 83); height: 8px;"></div>
+                    <div style="background-color: rgba(236, 232, 232, 0.8); height: 50px;">P</div>
+                </div>
+            </div>
+        </div>  
+        <div class="item4">aside</div>
+        <div class="item5">footer</div>  
+    </body>
+</html>
