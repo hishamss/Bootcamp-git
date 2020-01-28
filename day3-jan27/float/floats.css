@@ -18,6 +18,8 @@ header {
 }
 
 section {
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 #left {
@@ -36,30 +38,42 @@ section {
 }
 
 #full {
+  width: 100%;
+  overflow: auto;
+  clear: both;
+  color: #fff;
   background: #394549;
-  float: left;
-  height: 200px;
 }
 
 #division {
-  background: #6ea3da;
-  float: right;
+  padding: 20px;
+  margin-top: 20px;
+  background: #214fb3;
+  
 }
 
 aside {
-  background: #a6b747;
   float: left;
-  height: 150px;
+  width: 33%;
+  height: 200px;
+  padding: 20px;
+  margin-left: 30px;
+  text-decoration-color: white;
+  background: #a6b747;
+  border: 1px solid #eee;
 }
 
 footer {
+  background: #FFA500;
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
-.clearfix::after {
+/* .clearfix::after {
   content: "";
   clear: both;
   display: block;
-}
+} */
 
 
 .calssx > section {
