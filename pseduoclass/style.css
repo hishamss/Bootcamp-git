@@ -1,0 +1,14 @@
+body {
+  font-size: 20px;
+}
+a:hover {
+  color: red;
+}
+
+a:active {
+  background: green;
+}
+
+a::first-letter {
+  background-color: black;
+}
